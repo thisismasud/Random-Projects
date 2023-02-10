@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: linear-gradient(45deg, #0567f0, #1f7ca1);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.4rem;
+    background:white;
+    border-radius: 5px;
+    height: 30rem;
+    overflow: auto;
+}
+h2{
+    color:#0567f0;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+.input_and_select{
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 2.4rem;
+    align-items: center;
+
+}
+.input_and_select form{
+    display: flex;
+    align-items: center;
+}
+.select select{
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+form{
+    margin: 2rem 0rem;
+}
+form input{
+    height: 2.5rem;
+    line-height: 0rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border:1px solid #0be6fa;
+    color:#0567f0;
+    outline: none;
+    width: 15rem;
+    border-right:none;
+}
+
+  
+button{
+    cursor: pointer;
+    height: 2.5rem;
+    padding: 0rem 1rem;
+    border-radius: 0;
+    border: none;  
+}
+form button{
+    background:#1f7ca1;
+    color:white
+}
+form button:hover{
+    background:#48afd8;
+    color:white;
+}
+.todo-container{
+    margin-top: 1.5rem;
+}
+.todo-list{
+    margin-top: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+.todoDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.todo-li{
+    list-style: none;
+    padding: 0rem 1rem;
+    background: #a5ebe5;
+    width: 100%;
+    color:black;
+    margin: 0.5rem 0rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    overflow-y: auto;
+}
+.check-btn{
+    background-color: #1f7ca1;
+    color: white;
+    font-size: 1.2rem;
+}
+.check-btn:hover{
+    background-color: #45aad2;
+}
+.delete-btn{
+    background-color: #dd5135;
+    color: white;
+    font-size: 1rem;
+}
+.delete-btn:hover{
+    background-color: #e4644b;
+}
+.fa-check,
+.fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(5rem) rotateZ(20deg) ;
+    opacity: 0;
+}
+
+
+@media(max-width:450px){
+    h2{
+        font-size: 1.4rem;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    .wrapper{
+       padding: 0.5rem;
+       width: 95%;
+    }
+    .input_and_select{
+        display:flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        height: 2.4rem;
+        align-items: center;
+        flex-direction: column;
+        width:100%
+    
+    }
+    form input{
+        font-size: 1rem;
+        border:1px solid #0be6fa;
+        color:black;
+        outline: none;
+        width: 18rem;
+        border-right:none;
+        font-size: 0.8rem;
+    }
+
+    form{
+        margin: 0rem 0rem;
+    }
+    .select select{
+        width: 20.7rem ;
+        font-size: 0.8rem;
+    }
+    .todo-container{
+        margin-top: 3.5rem;
+        position:relative
+    }
+    
+    .todo-list li{
+        width: 76%;
+        font-size: 0.9rem;
+    }
+    .check-btn{
+        background-color: #1f7ca1;
+        color: white;
+        font-size: 0.7rem;
+    }
+    .delete-btn{
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(98, 119, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background:white;
+    width: 500px;
+    padding:1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+h1{
+    color:#425df3;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.container p{
+    color:#425df3;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.input{
+    margin: 1.2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hastage{
+    position: absolute;
+    padding: 0.5rem 0.8rem;
+    background:rgb(240, 197, 197);
+    height: 40px;
+    border: 1px solid grey;
+
+
+}
+#input-field{
+    height: 40px;
+    width:70%;
+    border-radius: 5px;
+    outline: none;
+    padding: 0rem 0.4rem 0rem 2.8rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    color: #3c5052;
+    text-transform: uppercase;
+}
+#input-field2{
+    height: 40px;
+    width:70%;
+    border-radius: 5px;
+    outline: none;
+    padding: 0rem 0.6rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    color: #3c5052;
+}
+.rgbContainer #input-field{
+    height: 40px;
+    width:70%;
+    border-radius: 5px;
+    outline: none;
+    padding: 0rem 0.5rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    color: #3c5052;
+    text-transform: uppercase;
+}
+.copy-btn, .copy-btn2{
+    height:40px;
+    width:16%;
+    background-color: #223181;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.colorOutput, .colorOutput2{
+    width: 10%;
+    background-color: #6277f0;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+
+
+}
+.change-btn{
+    background-color: #223181;
+    width: 100%;
+    height:50px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.message{
+    color:white;
+    background:#0a9faa;
+    padding: 1rem 1rem;
+    position:fixed;
+    z-index: 10;
+    right: -100%;
+    bottom:5%;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    border: none;
+
+}
+.message i{
+    color:white;
+    z-index: 20;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    
+
+
+}
+.message.active{
+    right: 3%;
+}

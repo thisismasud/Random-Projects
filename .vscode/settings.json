@@ -1,0 +1,6 @@
+{
+    "editor.suggest.showFolders": true,
+    "explorer.expandSingleFolderWorkspaces": true,
+    "npm.enableRunFromFolder": false,
+    "workbench.tree.expandMode": "singleClick"
+}
